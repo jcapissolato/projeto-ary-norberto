@@ -1,11 +1,11 @@
 import { createTheme } from '@mui/material/styles';
-import { corPrimaria, corSecundaria } from './colors';
+import { corPrimaria, corSecundaria, corWhatsapp } from './colors';
 
 const theme = createTheme({
   palette: {
     primary: {
         main: corPrimaria,
-        contrastText: "black"
+        contrastText: corWhatsapp
     },
     text: {
         primary: corSecundaria
