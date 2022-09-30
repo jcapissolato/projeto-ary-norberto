@@ -1,4 +1,4 @@
 
-export const corPrimaria = "#9C9C9C"
-export const corSecundaria = "#1C1C1C"
+export const corPrimaria = "#B5B5B5"
+export const corSecundaria = "#8B4513"
 export const corWhatsapp = "25d366"
