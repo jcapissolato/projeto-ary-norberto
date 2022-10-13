@@ -11,13 +11,13 @@ import '@fontsource/roboto/700.css';
 
 export const ImgImoveis = styled.div`
 width: 100%;
-height: 65vw;
+min-height: 140vh;
 display: flex;
 margin-left: 0%;
 margin-right: 0%;
 margin-top: 0%;
 opacity: 1;
-background-image: url(${edificioscomerciais});
+background-image: url(${paredequeimada});
 background-position: center;
 `
 export const ParedeQueimada = styled.div`
@@ -27,18 +27,20 @@ display: flex;
 margin-left: 0%;
 margin-right: 0%;
 margin-top: 0%;
-background-image: url(${paredequeimada});
+background-image: url(${apertodemao});
 background-position: center;
 `
 export const FechandoNegocio = styled.div`
 width: 100%;
-height: 65vw;
+height: 130vh;
 display: flex;
 margin-left: 0%;
 margin-right: 0%;
 margin-top: 0%;
 opacity: 1;
-background-image: url(${apertodemao});
+flex-direction: row;
+justify-content: center;
+background-image: url(${edificioscomerciais});
 `
 export const StyledButtonFooter = styled.div`
 display: flex;

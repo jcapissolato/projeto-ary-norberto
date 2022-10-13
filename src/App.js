@@ -34,26 +34,23 @@ import {
 import Header from "./components/header/Header";
 import Home from "./components/home/Home";
 import QuemSouEu from "./components/quem-sou-eu/QuemSouEu";
+import Atuacao from "./components/area-de-atuacao/Atuacao";
+
 
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <Header />
       <Home />
+
       <FechandoNegocio>
         <QuemSouEu />
       </FechandoNegocio>
-      
-      
-      
-      
-      
-      
+
       <ImgImoveis>
-        <div>
-          <h1>Área de Atuação</h1>
-        </div>
+        <Atuacao />
       </ImgImoveis>
+
       <ParedeQueimada>
         <div>
           <h1>Localização</h1>
@@ -62,6 +59,7 @@ const App = () => {
       <BottonWhatsapp>
         <WhatsAppIcon />
       </BottonWhatsapp>
+
       <AppBar position="columun">
         <Toolbar text-align="center">
           <IconButton
