@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
+import { BottonsModals } from "../styled";
 
 const style = {
   position: "absolute",
@@ -23,8 +24,8 @@ export default function ModalUsucapiaoExtrajuducial() {
 
   return (
     <div>
-      <div>
-        <Button onClick={handleOpen}>USUCAPIÃO EXTRAJUDICIAL</Button>
+      <BottonsModals>
+        <Button variant="contained" onClick={handleOpen}>USUCAPIÃO EXTRAJUDICIAL</Button>
         <Modal
           open={open}
           onClose={handleClose}
@@ -57,7 +58,7 @@ export default function ModalUsucapiaoExtrajuducial() {
             </Typography>
           </Box>
         </Modal>
-      </div>
+      </BottonsModals>
     </div>
   );
 }

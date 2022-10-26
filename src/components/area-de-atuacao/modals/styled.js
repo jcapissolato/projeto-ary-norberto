@@ -5,12 +5,14 @@ import styled from "styled-components"
 export const ContainerCards = styled.div`
 display: flex;
 flex-direction: row;
+max-height: 100%;
 `
 
 export const CardImobiliario = styled(Card)`
 display: flex;
 max-width: 30vw;
 min-height: 125vh;
+max-height: 155vh;
 margin: 10px;
 `
 export const CardTributario = styled(Card)`
@@ -19,6 +21,7 @@ width: 20vw;
 min-width: 20vw;
 height: 50vh;
 min-height:50vh;
+max-height: 50vh;
 margin: 10px;
 `
 export const CardCivil = styled(Card)`
@@ -27,6 +30,7 @@ width: 20vw;
 min-width: 20vw;
 height: 50vh;
 min-height:50vh;
+max-height: 50vh;
 margin: 10px;
 `
 export const TextoAtuacao = styled.text`

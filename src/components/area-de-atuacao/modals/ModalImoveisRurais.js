@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
+import styled from "styled-components";
 
 const style = {
   position: "absolute",
@@ -16,6 +17,12 @@ const style = {
   p: 4,
 };
 
+const StyleButton = styled.div`
+margin-left: 4px ;
+` 
+  
+
+
 export default function ModalImoveisRurais() {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
@@ -23,7 +30,9 @@ export default function ModalImoveisRurais() {
 
   return (
     <div>
-    <Button onClick={handleOpen}>IMÓVEIS RURAIS</Button>
+    <StyleButton>
+    <Button variant="contained" onClick={handleOpen}>IMÓVEIS RURAIS</Button>
+    </StyleButton>
     <Modal
       open={open}
       onClose={handleClose}

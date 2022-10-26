@@ -8,9 +8,13 @@ const theme = createTheme({
       contrastText: corSecundaria,
       text: {primary: corSecundaria}
     },
+    secondary: {
+      main: "#00E676",
+    },
     text:{
       primary: corSecundaria,
     }
+
   },
 });
 

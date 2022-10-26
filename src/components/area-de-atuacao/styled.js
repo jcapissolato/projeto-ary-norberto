@@ -13,3 +13,9 @@ display: flex;
 margin: 10px;
 `
 
+export const BottonsModals = styled.div`
+margin: 4px;
+`
+export const StyledText = styled.div`
+text-align: justify;
+`

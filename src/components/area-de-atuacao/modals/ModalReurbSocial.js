@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
+import { BottonsModals } from "../styled";
 
 const style = {
   position: "absolute",
@@ -23,8 +24,8 @@ export default function ModalReurbSocial() {
 
   return (
     <div>
-      <div>
-        <Button onClick={handleOpen}>REURB DE INTERESSE SOCIAL</Button>
+      <BottonsModals>
+        <Button variant="contained" onClick={handleOpen}>REURB DE INTERESSE SOCIAL</Button>
         <Modal
           open={open}
           onClose={handleClose}
@@ -44,7 +45,7 @@ export default function ModalReurbSocial() {
             </Typography>
           </Box>
         </Modal>
-      </div>
+      </BottonsModals>
     </div>
   );
 }

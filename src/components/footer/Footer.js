@@ -11,20 +11,11 @@ import { ButtonGroup } from "@mui/material";
 
 export default function Header() {
   return (
-    <AppBar position="fixed">
+    <AppBar position="static">
       <StyledToolbar>
-        
           <LogoStyle img src={logo} />
-        
-        <ButtonGroup variant="">
-          <Button href="#home">Home</Button>
-          <Button href="#eu" >Quem sou eu </Button>
-          <Button href="#atuacao">Atuação</Button>
-          <Button href="#contato">Contato</Button>
-        </ButtonGroup>
+         <h4 font="roboto">2022 - Ary Norberto Silva. Todos os direitos reservados. Criação de sites - Full Stack Developer Jorge Pissolato</h4>
       </StyledToolbar>
     </AppBar>
   );
 }
-
-

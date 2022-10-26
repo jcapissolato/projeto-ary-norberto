@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
+import { BottonsModals } from "../styled";
 
 const style = {
   position: "absolute",
@@ -23,8 +24,8 @@ export default function ModalUsucapiao() {
 
   return (
     <div>
-      <div>
-        <Button onClick={handleOpen}>
+      <BottonsModals>
+        <Button variant="contained" onClick={handleOpen}>
           REGULARIZAÇÃO PELA USUCAPIÃO
         </Button>
         <Modal
@@ -45,7 +46,7 @@ export default function ModalUsucapiao() {
             </Typography>
           </Box>
         </Modal>
-      </div>
+      </BottonsModals>
     </div>
   );
 }

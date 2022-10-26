@@ -5,6 +5,7 @@ display: flex;
 width: 100%;
 height: 100%;
 flex-direction:column;
+/* background-color: #E8E8E8; */
 `
 export const LogoBack = styled.img`
 display: flex;
@@ -30,4 +31,7 @@ font-family: 'Roboto';
 margin-left: 15px;
 margin-right: 15px;
 text-align: center;
+`
+export const StyledText = styled.div`
+text-align: justify;
 `

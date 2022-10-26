@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
+import { BottonsModals } from "../styled";
 
 const style = {
   position: "absolute",
@@ -22,8 +23,8 @@ export default function ModalParcelamentoUrbano() {
   const handleClose = () => setOpen(false);
 
   return (
-<div>
-        <Button onClick={handleOpen}>
+<BottonsModals>
+        <Button variant="contained" onClick={handleOpen}>
           PARCELAMENTO DO SOLO URBANO
         </Button>
         <Modal
@@ -54,6 +55,6 @@ export default function ModalParcelamentoUrbano() {
             </Typography>
           </Box>
         </Modal>
-      </div>
+      </BottonsModals>
   );
 }

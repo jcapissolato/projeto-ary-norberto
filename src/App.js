@@ -35,62 +35,54 @@ import Header from "./components/header/Header";
 import Home from "./components/home/Home";
 import QuemSouEu from "./components/quem-sou-eu/QuemSouEu";
 import Atuacao from "./components/area-de-atuacao/Atuacao";
+import { corWhatsapp } from "./constants/colors";
+import Footer from "./components/footer/Footer";
+import Contato from "./components/contato/Contato";
+
+ 
+// const onClick = () => {
+//   location.href = `wa.link/wq9hw4`
+// }
 
 
 const App = () => {
+  
+  // function onClickWhatsapp = () => {
+  //   window.location.href = `wa.link/wq9hw4`
+  // }
+
   return (
     <ThemeProvider theme={theme}>
+
       <Header />
-      <Home />
-
+      <div id="home"></div>
+      <Home/>
+      <hr/>
+      
       <FechandoNegocio>
-        <QuemSouEu />
+      <div id="eu"></div>
+        <QuemSouEu/>
       </FechandoNegocio>
-
+      
       <ImgImoveis>
+      <div id="atuacao"></div>
         <Atuacao />
       </ImgImoveis>
-
+      
       <ParedeQueimada>
-        <div>
-          <h1>Localização</h1>
-        </div>
+      <div id="contato"></div>
+        <Contato/>
       </ParedeQueimada>
-      <BottonWhatsapp>
+    
+      <BottonWhatsapp 
+      onClick={()=>(window.open(`https://wa.me/5565992933370 `))}
+      color="secondary"
+      >
         <WhatsAppIcon />
       </BottonWhatsapp>
+      
+      <Footer/>
 
-      <AppBar position="columun">
-        <Toolbar text-align="center">
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-          >
-            <StyledButtonInsta img src={instagram} />
-          </IconButton>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-          >
-            <StyledButtonFace img src={facebook} />
-          </IconButton>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-          >
-            <StyledButtonEmail img src={email} />
-          </IconButton>
-        </Toolbar>
-      </AppBar>
     </ThemeProvider>
   );
 };
