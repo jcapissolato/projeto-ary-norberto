@@ -12,7 +12,7 @@ export const CardImobiliario = styled(Card)`
 display: flex;
 max-width: 30vw;
 min-height: 125vh;
-max-height: 155vh;
+max-height: 185vh;
 margin: 10px;
 `
 export const CardTributario = styled(Card)`
