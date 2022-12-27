@@ -35,3 +35,11 @@ text-align: center;
 export const StyledText = styled.div`
 text-align: justify;
 `
+
+export const Atendimento = styled.div`
+width: 300px;
+height: 60px;
+margin-left: 40%;
+margin-right: 25%;
+margin-top: -120px;
+`
